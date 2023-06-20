@@ -1,0 +1,30 @@
+/*I have a bicycle shop, and this data was created to keep track on my inventory.*/
+
+CREATE TABLE bikestore (id INTEGER PRIMARY KEY, name TEXT, quanity INTEGER, color TEXT, price INTEGER);
+
+/*Each grooup of bikes are broken down accordding to their product numbers,names, how many in stock, color and price */
+
+INSERT INTO bikestore VALUES (1,"cool runner", 6, "yellow", 105);
+INSERT INTO bikestore VALUES (2, "pelotonals", 8, "black", 230);
+INSERT INTO bikestore VALUES (3, "unicorn cycles", 3, "purple", 98);
+INSERT INTO bikestore VALUES (4, "speeders", 11, "orange", 350);
+INSERT INTO bikestore VALUES (5, "trail ghosters", 15, "green", 258);
+INSERT INTO bikestore VALUES (6, "jet runners", 4, "blue", 78);
+INSERT INTO bikestore VALUES (7, "trollies", 2, "red", 150);
+INSERT INTO bikestore VALUES (8, "jets", 5, "teal", 100);
+INSERT INTO bikestore VALUES (9, "steamers",7, "white", 130);
+INSERT INTO bikestore VALUES (10, "road runners", 12, "tan", 233);
+INSERT INTO bikestore VALUES (11, "riders", 1, "gold", 56);
+INSERT INTO bikestore VALUES (12, "goers", 11, "pink", 100);
+INSERT INTO bikestore VALUES (13, "blues", 3, "green", 96);
+INSERT INTO bikestore VALUES (14, "grazer", 12, "dark orange", 220);
+INSERT INTO bikestore VALUES (15, "dasher", 10, "midnight", 112);
+
+/*In this area, I wanted to place everything  in order, lowest to highest pric, amything less than 400e*/
+SELECT * FROM bikestore WHERE price <400 ORDER BY price;
+
+/*I also wanted to know how many bikes we have in stock as you can see below*/
+
+SELECT SUM (quanity) FROM bikestore
+
+
