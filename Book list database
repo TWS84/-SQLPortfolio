@@ -1,0 +1,13 @@
+/* within this table, I wanted to create a small database to store some of my favorite books. 
+I wanted everything in the id, name, and rating columns */
+
+
+CREATE TABLE books (id INTEGER PRIMARY KEY, name TEXT, rating INTEGER);
+
+INSERT INTO books VALUES (12435,"Living with Purpose", 10 );
+
+INSERT INTO books VALUES (12436, "The Runaways", 09);
+
+INSERT INTO books VALUES (12437, "Come to Me",08);
+
+INSERT INTO books VALUES (12438, "All My Life", 07);
